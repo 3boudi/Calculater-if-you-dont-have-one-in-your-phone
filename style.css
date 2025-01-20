@@ -13,6 +13,7 @@ body{
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
+    border: white solid 5px;
 }
 #display{
     width: 100%;
@@ -25,7 +26,6 @@ body{
 button{
     width: 100px;
     height: 100px;
-    border:4px gold solid;
     border-radius: 50%;
     font-size:4rem;
     font-weight: bold;
@@ -47,8 +47,31 @@ button::after{
     margin: none;
 }
 .operation-btn{
-    
+    color:#1c1c1c;
     background-color: gold;
 }
+.operation-btn:hover{
+    background-color: white;
+}
+@media (max-width: 600px){
+    button{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        font-size:2rem;
+        font-weight: bold;
+        color :white;
+        background-color: rgb(44, 44, 44); 
+        cursor: pointer;
+    }
+    #display{
+        width: 100%;
+        padding: 20px;
+        font-size: 3rem;
+        background-color: rgb(25, 24, 24);
+        border: none;
+        color: white;
+    }
 
+}
 

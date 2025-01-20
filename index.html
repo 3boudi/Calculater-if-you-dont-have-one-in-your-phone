@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     
     <div id="calculater">
         <input id="display" readonly>
         <div id="keys">
@@ -28,6 +27,9 @@
             <button onclick="appendToDisplay('.')">.</button>
             <button onclick="calculate()">=</button>
             <button onclick="clearDisplay()" class="operation-btn">C</button>
+            <button onclick="clearChar()"><</button>
+            <button onclick="appendToDisplay('00')">00</button>
+            <button onclick="appendToDisplay('%')">%</button>
         </div>
     </div>
 

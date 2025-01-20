@@ -10,13 +10,15 @@ function calculate(){
     catch{
         display.value="ERROR";
         setTimeout(()=>{
-            
             display.value="";
-        },1000)
-        
+        },1000) 
     }
 }
 function clearDisplay(){
     const display=document.getElementById('display');
     display.value="";
+}
+function clearChar(){
+    const display = document.getElementById('display');
+    display.value = display.value.substring(0, display.value.length - 1);
 }
